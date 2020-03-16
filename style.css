@@ -1,0 +1,258 @@
+body {
+	font-family: Open Sans, sans-serif;
+	font-size: 11pt;
+	background-color: #fff;
+	color: #blue;
+	background-image: url(trub.jpg);
+	background-repeat: repeat;
+}
+body form button {
+	background-color: #A3DAF5;
+	position: absolute;
+	top: 30px;
+}
+
+
+
+
+
+p{
+margin: 3px;
+}
+
+h1 {
+color: #blue;
+font-size: 24pt;
+font-family: Open Sans, serif;
+font-weight: normal;
+}
+
+.submitButton{
+padding:7px 9px 8px 9px;
+background-color: white;
+
+border-radius: 20px;
+font-size: 15px;
+font-family: Open Sans;
+border: none;
+margin-top: 20px;
+}
+
+
+.cold{
+	background-color: #7DC9F9;
+	color: #000000;
+	width: 250px;
+	text-align: center;
+	border-radius: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	height: 250px;
+	position: absolute;
+	top: 240px;
+	left: 280px;
+	background-image: url(cold.png);
+	background-repeat: no-repeat;
+	background-size: 368px 294px;
+	background-position: -56px -6px;
+	background-attachment: scroll;
+}
+.hot{
+	background-color: #7DC9F9;
+	color: #000000;
+	width: 250px;
+	text-align: center;
+	border-radius: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	height: 250px;
+	position: absolute;
+	top: 245px;
+	left: 720px;
+	background-image: url(hot.jpg);
+	background-repeat: no-repeat;
+	background-size: 369px 296px;
+	background-position: -56px -22px;
+	background-attachment: scroll;
+	z-index: 2;
+}
+
+
+
+
+.r2{
+font-size: 90px;
+margin: 0;
+}
+
+
+
+.coldwater{
+	display: inline-block;
+	width: 160px;
+	opacity: 1;
+	background-color: #FFFFFF;
+	height: 37px;
+	position: absolute;
+	top: 71px;
+	left: 44px;
+	color: #000000;
+	text-align: center;
+	font-size: 25pt;
+	border: medium solid #3D2001;
+	border-radius: 8px;
+}
+.litrcold{
+	display: inline-block;
+	width: 60px;
+	opacity: 0.35;
+	background-color: #FF1B1F;
+	height: 37px;
+	position: absolute;
+	top: 74px;
+	left: 150px;
+	color: #000000;
+	text-align: center;
+	font-size: 25pt;
+	border-radius: 0px 8px 8px 0px;
+}
+.hotwater{
+	display: inline-block;
+	width: 160px;
+	opacity: 1;
+	background-color: #FFFFFF;
+	height: 37px;
+	position: absolute;
+	top: 67px;
+	left: 43px;
+	color: #000000;
+	text-align: center;
+	font-size: 25pt;
+	border: medium solid #3D2001;
+	border-radius: 8px;
+}
+.litrhot{
+	display: inline-block;
+	width: 60px;
+	opacity: 0.35;
+	background-color: #FF1B1F;
+	height: 38px;
+	position: absolute;
+	top: 69px;
+	left: 148px;
+	color: #000000;
+	text-align: center;
+	font-size: 25pt;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.error{
+	background-color: #7DC9F9;
+	color: #fff;
+	width: 50%;
+	text-align: center;
+	min-width: 350px;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	position: absolute;
+	left: 340px;
+	top: 18px;
+}
+.errormain{
+
+font-size: 30px;
+background-color: #7DC9F9;
+color:#fff;
+width: 49%;
+text-align:center;
+min-width: 300px;
+border-radius: 10px;
+margin-left: auto;
+margin-right: auto;
+float: left;
+min-height: 20px;
+}
+.errorsubmain{
+font-size: 30px;
+margin: 0;
+}
+.errortext{
+color:#e21414;
+display:inline-block;
+}
+
+.alarm{
+	background-color: #7DC9F9;
+	color: #fff;
+	width: 50%;
+	text-align: center;
+	min-width: 350px;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	position: absolute;
+	left: 340px;
+	top: 120px;
+}
+.errormain{
+
+font-size: 30px;
+background-color: #7DC9F9;
+color:#fff;
+width: 49%;
+text-align:center;
+min-width: 300px;
+border-radius: 10px;
+margin-left: auto;
+margin-right: auto;
+float: left;
+min-height: 20px;
+}
+.alarmsubmain{
+font-size: 30px;
+margin: 0;
+}
+.alarmtext{
+color:#e21414;
+display:inline-block;
+}
+.graf {
+	position: absolute;
+	top: 121px;
+	left: 9px;
+}
+.grafday {
+	position: absolute;
+	top: 157px;
+	left: 9px;
+}
+.grafweek {
+	position: absolute;
+	top: 194px;
+	left: 9px;
+}
+.grafmonth {
+	position: absolute;
+	top: 230px;
+	left: 9px;
+}
+.indexin {
+	position: absolute;
+	top: 118px;
+	left: 827px;
+}
+.lk {
+	position: absolute;
+	top: 80px;
+	left: 8px;
+}
+.formlogin {
+	position: absolute;
+	left: 700px;
+	top: 14px;
+}

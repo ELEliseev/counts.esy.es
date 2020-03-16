@@ -1,0 +1,85 @@
+﻿<head>
+	<meta charset="utf-8"/>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="https://code.highcharts.com/stock/highstock.js"></script>
+	<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+</head>
+<body>
+	<div id="container" style="height: 400px; min-width: 310px"></div>
+
+</body>
+<script type="text/javascript">
+$(function() {
+  //new Date(2016, 8, 9, 10) - это равно 1473404400000
+  Highcharts.setOptions({
+    global: {
+      useUTC: false
+    } // это чтобы график понимал время как московское
+  });
+  // Create the chart
+  hot_data = [
+    [new Date(2016, 8, 9, 1).getTime(), 0.006],
+    [new Date(2016, 8, 9, 2).getTime(), 0.003],
+    [new Date(2016, 8, 9, 3).getTime(), 0.006],
+    [new Date(2016, 8, 9, 4).getTime(), 0.003],
+    [new Date(2016, 8, 9, 5).getTime(), 0.003],
+    [new Date(2016, 8, 9, 6).getTime(), 0.004], // первым элементом массива идет дата изменения значения в миллисикундах, это такой стандарт в программировании, вторым дельта между полученными показаниями счетчика
+    [new Date(2016, 8, 9, 7).getTime(), 0.006],
+    [new Date(2016, 8, 9, 8).getTime(), 0.003],
+    [new Date(2016, 8, 9, 9).getTime(), 0.003],
+    [new Date(2016, 8, 9, 10).getTime(), 0.007]
+  ];
+  cold_data = [
+    [new Date(2016, 8, 9, 1).getTime(), 0.005],
+    [new Date(2016, 8, 9, 2).getTime(), 0.004],
+    [new Date(2016, 8, 9, 3).getTime(), 0.002],
+    [new Date(2016, 8, 9, 4).getTime(), 0.005],
+    [new Date(2016, 8, 9, 5).getTime(), 0.003],
+    [new Date(2016, 8, 9, 6).getTime(), 0.008],
+    [new Date(2016, 8, 9, 7).getTime(), 0.009],
+    [new Date(2016, 8, 9, 8).getTime(), 0.010],
+    [new Date(2016, 8, 9, 9).getTime(), 0.004],
+    [new Date(2016, 8, 9, 10).getTime(), 0.004]
+  ]
+  $('#container').highcharts('StockChart', {
+    chart: {
+      type: 'column'
+    },
+    timezoneOffset: 180,
+
+    rangeSelector: {
+      buttons: [{
+        type: 'day',
+        count: 1,
+        text: 'день'
+      }, {
+        type: 'all',
+        count: 1,
+        text: 'все'
+      }],
+      selected: 1
+    },
+
+    title: {
+      text: 'Показания приборов водосчетчиков'
+    },
+
+    series: [{
+      name: 'Холодная вода',
+      data: cold_data,
+      color: '#7cb5ec',
+      tooltip: {
+        valueDecimals: 3
+      }
+    }, {
+      name: 'Горячая вода',
+      data: hot_data,
+      color: '#f15c80',
+      tooltip: {
+        valueDecimals: 3
+      }
+    }]
+  });
+
+});
+</script>
